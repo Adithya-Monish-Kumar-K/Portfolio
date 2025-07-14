@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import Navigation from './components/Navigation';
+import HeroHUD from './components/HeroHUD';
+import SkillsGrid from './components/SkillsGrid';
+import ProgrammingLanguages from './components/ProgrammingLanguages';
+import Certifications from './components/Certifications';
+import Interests from './components/Interests';
+import Awards from './components/Awards';
+import Timeline from './components/Timeline';
+import ProjectCard from './components/ProjectCard';
+import ResumeDownload from './components/ResumeDownload';
+import SocialLinks from './components/SocialLinks';
+import {portfolioData} from './data/portfolio';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <div className = "min-h-screen bg-black text-white">
+            <Navigation/>
+            <main>
+                <HeroHUD/>
+                <SkillsGrid
+                title = "Technical Skills"
+                skills = {portfolioData.skills.technical}
+                type = "technical"
+                />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                <SkillsGrid
+                title = "General Skills"
+                skills = {portfolioData.skills.general}
+                type = "general"
+                />
+
+                <ProgrammingLanguages />
+                
+                <Certifications />
+
+                <Interests />
+
+                <Awards />
+
+                <Timeline />
+
+                <ProjectCard />
+
+                <ResumeDownload />
+
+                <SocialLinks />
+            </main>
+            {/* Footer */}
+            <footer className = "bg-black border-t border-cyan-400/20 py-8">
+            <div className = "max-w-4xl mx-auto px-4 text-center">
+                <p className = "text-gray-400 font-mono">
+                    © 2025 {portfolioData.peronal.name}. Built with TypeScript & React.
+                </p>
+            </div>
+            </footer>
+        </div>
+    );
 }
 
-export default App
+export default App;
