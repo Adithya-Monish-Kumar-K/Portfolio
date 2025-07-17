@@ -1,3 +1,6 @@
+import myselfImg from "../assets/Myself.jpg";
+import resumepdf from "../assets/Adithya Monish Kumar K - Resume.pdf";
+
 export interface PortfolioData {
   personal: {
     name: string;
@@ -16,10 +19,6 @@ export interface PortfolioData {
   skills: {
     technical: string[];
     general: string[];
-    languages: {
-      name: string;
-      level: number;
-    }[];
   };
   certifications: {
     title: string;
@@ -58,188 +57,105 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   personal: {
-    name: "Alex Chen",
-    title: "Full-Stack Developer",
-    photoUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-    bio: "Passionate developer specializing in modern web technologies and cloud architecture. I build scalable applications that solve real-world problems.",
-    location: "San Francisco, CA",
-    email: "alex.chen@email.com",
-    phone: "+1 (555) 123-4567",
-    interests: ["Machine Learning", "Cloud Architecture", "Open Source", "Game Development", "Blockchain"],
+    name: "Adithya Monish Kumar K",
+    title: "Full-Stack & AI Enthusiast",
+    photoUrl: myselfImg,
+    bio: "A full-stack developer and AI enthusiast skilled in JavaScript (React, Node.js), TypeScript, and modern CSS. I build scalable web and mobile applications and integrate machine learning models—using TensorFlow, PyTorch, and Hugging Face—for features like semantic search and real-time analytics.",
+    location: "Coimbatore, Tamil Nadu, India",
+    email: "ooaadithya@gmail.com",
+    phone: "(+91) 860-828-6094",
+    interests: ["Full Stack Development", "Mobile Application Development", "Machine Learning", "Deep Learning", "Artificial Intelligence"],
     stats: [
-      { label: "Race", value: "Software Engineer" },
-      { label: "Class", value: "Full-Stack Developer" },
-      { label: "Level", value: "Senior" },
-      { label: "Experience", value: "5+ Years" },
-      { label: "Specialization", value: "React & Node.js" },
-      { label: "Status", value: "Available for Hire" }
+      { label: "Course", value: "Bachelor of Technology" },
+      { label: "Specialization", value: "Computer Science and Engineering" },
+      { label: "Year", value: "3rd Year" },
+      { label: "CGPA", value: "7.65" },
+      { label: "Year of Graduation", value: "2027" },
+      { label: "Status", value: "Available for Internships" }
     ]
   },
   skills: {
     technical: [
-      "React", "TypeScript", "Node.js", "Python", "AWS", "Docker", 
-      "PostgreSQL", "MongoDB", "GraphQL", "REST APIs", "Git", "CI/CD",
-      "Kubernetes", "Terraform", "Redis", "Elasticsearch"
+      "React", "TypeScript", "Node.js", "MySQL", "Docker", 
+      "PostgreSQL", "MongoDB", "Flutter", "Dart", "Git", "UI/UX Design",
+      "Machine Learning (ML)", "HTML", "CSS", "JavaScript", "Python", "Java", "C/C++", "Dart", "Tailwind CSS",
+      "Design and Analysis of Algorithms (DAA)", "Data Structures and Algorithms (DSA)", "Database Management System (DBMS)", "Object-Oriented Programming (OOP)", "Computer Organization and Architecture (COA)"
     ],
     general: [
-      "Problem Solving", "Team Leadership", "Agile/Scrum", "Code Review",
-      "Mentoring", "Technical Writing", "System Design", "Project Management"
-    ],
-    languages: [
-      { name: "JavaScript/TypeScript", level: 95 },
-      { name: "Python", level: 88 },
-      { name: "Java", level: 75 },
-      { name: "Go", level: 70 },
-      { name: "Rust", level: 60 },
-      { name: "SQL", level: 85 }
+        "Critical Thinking", "Problem Solving", "Project Management", "Team Leadership", "Effective Communication", "Time Management", "Adaptability",
+        "Collaboration", "Decision Making", "Attention to Detail", "Creative Thinking", "Analytical Reasoning", "Interpersonal Skills"
     ]
   },
   certifications: [
     {
-      title: "AWS Solutions Architect Professional",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      link: "https://aws.amazon.com/certification/"
-    },
-    {
-      title: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2023"
-    },
-    {
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2022"
+      title: "Google Cybersecurity Professional Certificate",
+      issuer: "Google",
+      date: "2024",
+      link: "https://coursera.org/share/83e8edbac26738e9859ce6eb799fff6a"
     }
   ],
   awards: [
     {
-      title: "Best Innovation Award",
-      date: "2023",
-      description: "Recognized for developing an AI-powered code review system",
-      organization: "TechCorp Annual Awards"
-    },
-    {
-      title: "Hackathon Winner",
-      date: "2022",
-      description: "1st place in Global AI Hackathon with real-time translation app",
-      organization: "AI Global Hackathon"
-    },
-    {
-      title: "Open Source Contributor of the Year",
-      date: "2021",
-      description: "Contributed over 500 commits to major open source projects",
-      organization: "Open Source Foundation"
+      title: "Adobe India Hackathon Shortlisted Candidate",
+      date: "2025",
+      description: "Passed the Round 1 of the Adobe India Hackathon 2025. Being shortlisted as one of the top 10000 from 2,62,000+ participants.",
+      organization: "Adobe"
     }
   ],
   experience: [
     {
-      company: "TechCorp",
-      role: "Senior Full-Stack Developer",
-      from: "2022",
+      company: "Sony SSUP AgroESP",
+      role: "Mobile Application Team Lead",
+      from: "2025",
       to: "Present",
-      location: "San Francisco, CA",
+      location: "Coimbatore, Tamil Nadu, India",
       bullets: [
-        "Led development of microservices architecture serving 10M+ users",
-        "Implemented CI/CD pipelines reducing deployment time by 75%",
-        "Mentored 5 junior developers and conducted technical interviews",
-        "Built real-time analytics dashboard using React and WebSocket"
-      ]
-    },
-    {
-      company: "StartupXYZ",
-      role: "Full-Stack Developer",
-      from: "2020",
-      to: "2022",
-      location: "Remote",
-      bullets: [
-        "Developed MVP from scratch using React, Node.js, and PostgreSQL",
-        "Implemented authentication and authorization system",
-        "Optimized database queries improving performance by 60%",
-        "Integrated third-party APIs and payment processing"
-      ]
-    },
-    {
-      company: "WebAgency",
-      role: "Frontend Developer",
-      from: "2019",
-      to: "2020",
-      location: "New York, NY",
-      bullets: [
-        "Built responsive websites for 20+ clients using React and Vue.js",
-        "Collaborated with designers to implement pixel-perfect UIs",
-        "Improved website loading speeds by 40% through optimization",
-        "Maintained and updated existing client websites"
+        "Led the Creation and Development of the Sony SSUP AgroESP mobile application using Flutter and Dart, enabling farmers to access real-time weather data, market prices, and agricultural tips.",
+        "Refactored UI to ensure all updated backend data displays correctly and consistently across all screens",
+        "Redesigned Polyhouse chart to be fully responsive and render the most recent data on page load",
+        "Added customizable DataView controls allowing users to select 1-hour, 3-hour, or 5-hour windows of Server-Sent Events readings",
+        "Integrated Polyhouse graph with SSE endpoint for real-time sensor data updates",
+        "Connected dashboard widgets to the same SSE stream so all dashboard data refreshes live",
+        "Implemented live image refresh logic to display any new backend-pushed images instantly",
+        "Built a gallery on the Polyhouse page showing the ten most recent images received from the server",
+        "Engineered gallery management to automatically add new images and remove the oldest, keeping exactly ten entries",
+        "Enhanced Profile page to display user's username, role, and organization affiliation",
+        "Consumed and rendered real-time environmental data (temperature, humidity) and images streamed from the Madampatti end node",
+        "Added interactive zoom-in/out and click-to-view functionality for images in the Recent Images gallery",
+        "Created the query page and implemented all it's features."
       ]
     }
   ],
   projects: [
     {
-      name: "AI Code Assistant",
-      description: "An intelligent code completion and review tool powered by machine learning that helps developers write better code faster.",
-      tech: ["React", "TypeScript", "Python", "TensorFlow", "AWS", "Docker"],
-      repoUrl: "https://github.com/alexchen/ai-code-assistant",
-      liveUrl: "https://ai-code-assistant.demo.com",
+      name: "LifeLeveler",
+      description: "A gamified life management app that transforms your daily tasks into an RPG adventure.",
+      tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "React Router", "Zustand", "Framer Motion", "Lucide React", "React Toastify", "PostCSS", "Autoprefixer", "ESLint", "Node.js", "PostgreSQL", "Netlify"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/LifeLeveler",
+      liveUrl: "https://lifeleveler.netlify.app",
       featured: true
-    },
-    {
-      name: "Real-time Chat Platform",
-      description: "Scalable chat application with end-to-end encryption, file sharing, and video calling capabilities.",
-      tech: ["React", "Node.js", "Socket.io", "PostgreSQL", "Redis"],
-      repoUrl: "https://github.com/alexchen/chat-platform",
-      liveUrl: "https://chat-platform.demo.com",
-      featured: true
-    },
-    {
-      name: "E-commerce Analytics Dashboard",
-      description: "Comprehensive analytics platform for e-commerce businesses with real-time sales tracking and predictive insights.",
-      tech: ["Vue.js", "Node.js", "MongoDB", "Chart.js", "AWS"],
-      repoUrl: "https://github.com/alexchen/ecommerce-analytics",
-      featured: true
-    },
-    {
-      name: "Blockchain Voting System",
-      description: "Secure and transparent voting platform built on Ethereum blockchain ensuring election integrity.",
-      tech: ["React", "Solidity", "Web3.js", "Ethereum", "IPFS"],
-      repoUrl: "https://github.com/alexchen/blockchain-voting"
-    },
-    {
-      name: "Task Management API",
-      description: "RESTful API for project management with role-based access control and real-time notifications.",
-      tech: ["Node.js", "Express", "PostgreSQL", "JWT", "Docker"],
-      repoUrl: "https://github.com/alexchen/task-api"
     }
   ],
   links: [
     {
       type: "github",
-      url: "https://github.com/alexchen",
+      url: "https://github.com/Adithya-Monish-Kumar-K",
       label: "GitHub"
     },
     {
       type: "linkedin",
-      url: "https://linkedin.com/in/alexchen-dev",
+      url: "https://www.linkedin.com/in/adithya-monish-kumar-k-236444288",
       label: "LinkedIn"
     },
     {
-      type: "blog",
-      url: "https://alexchen.dev/blog",
-      label: "Tech Blog"
-    },
-    {
       type: "resume",
-      url: "/resume.pdf",
+      url: resumepdf,
       label: "Download Resume"
     },
     {
       type: "email",
-      url: "mailto:alex.chen@email.com",
+      url: "mailto:ooaadithya@gmail.com",
       label: "Email"
     },
-    {
-      type: "twitter",
-      url: "https://twitter.com/alexchen_dev",
-      label: "Twitter"
-    }
   ]
 };

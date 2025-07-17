@@ -6,14 +6,14 @@ const HeroHUD = () => {
   const { personal } = portfolioData;
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center p-4 pt-16 lg:pt-24 relative overflow-hidden">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900">
         <div className="absolute inset-0 opacity-30 bg-gradient-to-r from-cyan-400/10 to-blue-500/10 animate-pulse"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 gap-8 items-center justify-items-center">
           {/* Left Side - Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative group">
@@ -38,7 +38,7 @@ const HeroHUD = () => {
               <p className="text-2xl lg:text-3xl text-cyan-400 font-mono mb-4">
                 {personal.title}
               </p>
-              <p className="text-gray-300 text-lg max-w-2xl">
+              <p className="text-gray-300 text-lg max-w-4xl">
                 {personal.bio}
               </p>
             </div>

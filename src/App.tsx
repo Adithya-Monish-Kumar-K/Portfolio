@@ -2,7 +2,6 @@ import React from 'react';
 import Navigation from './components/Navigation';
 import HeroHUD from './components/HeroHUD';
 import SkillsGrid from './components/SkillsGrid';
-import ProgrammingLanguages from './components/ProgrammingLanguages';
 import Certifications from './components/Certifications';
 import Interests from './components/Interests';
 import Awards from './components/Awards';
@@ -32,8 +31,6 @@ function App() {
           skills={portfolioData.skills.general} 
           type="general" 
         />
-        
-        <ProgrammingLanguages />
         
         <Certifications />
         

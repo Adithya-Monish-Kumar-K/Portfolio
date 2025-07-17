@@ -9,7 +9,6 @@ const Navigation = () => {
     { id: 'hero', label: 'Profile' },
     { id: 'technical-skills', label: 'Tech Skills' },
     { id: 'general-skills', label: 'General Skills' },
-    { id: 'languages', label: 'Languages' },
     { id: 'certifications', label: 'Certifications' },
     { id: 'interests', label: 'Interests' },
     { id: 'awards', label: 'Awards' },

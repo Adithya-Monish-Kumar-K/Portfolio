@@ -15,7 +15,7 @@ const Interests = () => {
     <section id="interests" className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black"></div>
       
-      <div className="relative z-10 max-w-4xl mx-auto">
+      <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 glitch-text">
             Areas of Interest
