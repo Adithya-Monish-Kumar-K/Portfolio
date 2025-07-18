@@ -22,7 +22,7 @@ const HeroHUD = () => {
                 <img
                   src={personal.photoUrl}
                   alt={personal.name}
-                  className="w-80 h-80 object-cover rounded-lg"
+                  className="w-80 h-100 object-cover rounded-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-400 w-4 h-4 rounded-full animate-pulse"></div>
               </div>
