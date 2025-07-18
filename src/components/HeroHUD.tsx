@@ -65,10 +65,6 @@ const HeroHUD = () => {
                 <Mail size={16} className="text-cyan-400" />
                 {personal.email}
               </div>
-              <div className="flex items-center gap-2 text-gray-300">
-                <Phone size={16} className="text-cyan-400" />
-                {personal.phone}
-              </div>
             </div>
           </div>
         </div>

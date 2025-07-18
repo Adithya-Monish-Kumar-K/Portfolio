@@ -9,7 +9,6 @@ export interface PortfolioData {
     bio: string;
     location: string;
     email: string;
-    phone: string;
     interests: string[];
     stats: {
       label: string;
@@ -63,7 +62,6 @@ export const portfolioData: PortfolioData = {
     bio: "A full-stack developer and AI enthusiast skilled in JavaScript (React, Node.js), TypeScript, and modern CSS. I build scalable web and mobile applications and integrate machine learning models—using TensorFlow, PyTorch, and Hugging Face—for features like semantic search and real-time analytics.",
     location: "Coimbatore, Tamil Nadu, India",
     email: "ooaadithya@gmail.com",
-    phone: "(+91) 860-828-6094",
     interests: ["Full Stack Development", "Mobile Application Development", "Machine Learning", "Deep Learning", "Artificial Intelligence"],
     stats: [
       { label: "Course", value: "Bachelor of Technology" },
