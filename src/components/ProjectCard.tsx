@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Github, ExternalLink, Star } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Award, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Heart, Star, Zap } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navigation from './components/Navigation';
 import HeroHUD from './components/HeroHUD';
 import SkillsGrid from './components/SkillsGrid';

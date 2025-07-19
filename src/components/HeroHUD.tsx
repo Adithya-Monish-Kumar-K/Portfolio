@@ -1,5 +1,5 @@
-import React from 'react';
-import { User, MapPin, Mail } from 'lucide-react';
+
+import { MapPin, Mail } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const HeroHUD = () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-import { portfolioData } from '../data/portfolio';
 
 interface SkillsGridProps {
   title: string;
