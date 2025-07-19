@@ -90,6 +90,12 @@ export const portfolioData: PortfolioData = {
       issuer: "Google",
       date: "2024",
       link: "https://coursera.org/share/83e8edbac26738e9859ce6eb799fff6a"
+    },
+    {
+      title: "Google AI Essentials Certificate",
+      issuer: "Google",
+      date: "2024",
+      link: "https://coursera.org/share/60a765b1a191df563fbd3ad55ded874e"
     }
   ],
   awards: [
