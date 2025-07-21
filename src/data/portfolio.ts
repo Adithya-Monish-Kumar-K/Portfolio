@@ -1,5 +1,5 @@
 import myselfImg from "../assets/Myself.jpg";
-import resumepdf from "../assets/Adithya Monish Kumar K - Resume.pdf";
+import resumepdf from "../assets/Resume.pdf";
 
 export interface PortfolioData {
   personal: {
