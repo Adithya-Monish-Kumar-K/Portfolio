@@ -138,6 +138,20 @@ export const portfolioData: PortfolioData = {
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/LifeLeveler",
       liveUrl: "https://lifeleveler.netlify.app",
       featured: true
+    },
+    {
+      name: "PDF Document Structure Extraction Engine",
+      description: "Developed a hybrid pipeline to extract and classify structural elements (Title, H1-H4) from PDFs using LightGBM and Transformer-based models.  Engineered typographic and positional features, and implemented block-merging heuristics for robust outline generation.",
+      tech: ["Python", "LightGBM", "Transformers", "PyMuPDF"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/PDF-Document-Structure-Extraction-Engine",
+      featured: true
+    },
+    {
+      name: "Persona Driven Document Intelligence Engine",
+      description: "Built a semantic matching engine that ranks PDF sections for specific user personas using fine-tuned SentenceTransformer and cosine similarity scoring. Designed a multi-stage relevance scoring framework combining title similarity, content embeddings, and subsection summarization.",
+      tech: ["Python", "SentenceTransformers","LightGBM"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Persona-Driven-Document-Intelligence-Engine",
+      featured: true
     }
   ],
   links: [
