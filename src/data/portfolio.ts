@@ -162,7 +162,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       type: "linkedin",
-      url: "https://www.linkedin.com/in/adithya-monish-kumar-k-236444288",
+      url: "https://www.linkedin.com/in/adithya-monish-kumar-k",
       label: "LinkedIn"
     },
     {
