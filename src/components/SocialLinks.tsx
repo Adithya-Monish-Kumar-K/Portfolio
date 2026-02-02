@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Globe, Mail, Twitter, FileText } from 'lucide-react';
+import { Github, Linkedin, Globe, Mail, Twitter, FileText, Code } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 
 const SocialLinks = () => {
@@ -19,6 +19,8 @@ const SocialLinks = () => {
         return <Twitter size={24} />;
       case 'resume':
         return <FileText size={24} />;
+      case 'leetcode':
+        return <Code size={24} />;
       default:
         return <Globe size={24} />;
     }
@@ -38,6 +40,8 @@ const SocialLinks = () => {
         return 'from-blue-400 to-cyan-400';
       case 'resume':
         return 'from-purple-400 to-violet-400';
+      case 'leetcode':
+        return 'from-orange-400 to-yellow-500';
       default:
         return 'from-gray-400 to-gray-600';
     }
@@ -46,7 +50,7 @@ const SocialLinks = () => {
   return (
     <section id="links" className="py-20 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-black to-gray-900"></div>
-      
+
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4 glitch-text">
@@ -55,7 +59,7 @@ const SocialLinks = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded"></div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {links.map((link, index) => (
             <div
               key={index}

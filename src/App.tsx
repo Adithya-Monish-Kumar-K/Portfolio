@@ -16,34 +16,34 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
-      
+
       <main>
         <HeroHUD />
-        
-        <SkillsGrid 
-          title="Technical Skills" 
-          skills={portfolioData.skills.technical} 
-          type="technical" 
+
+        <SkillsGrid
+          title="Technical Skills"
+          skills={portfolioData.skills.technical}
+          type="technical"
         />
-        
-        <SkillsGrid 
-          title="General Skills" 
-          skills={portfolioData.skills.general} 
-          type="general" 
+
+        <SkillsGrid
+          title="General Skills"
+          skills={portfolioData.skills.general}
+          type="general"
         />
-        
+
         <Certifications />
-        
+
         <Interests />
-        
+
         <Awards />
-        
+
         <Timeline />
-        
+
         <ProjectCard />
-        
+
         <ResumeDownload />
-        
+
         <SocialLinks />
       </main>
 
@@ -51,7 +51,7 @@ function App() {
       <footer className="bg-black border-t border-cyan-400/20 py-8">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-gray-400 font-mono">
-            © 2025 {portfolioData.personal.name}. Built with React & TypeScript.
+            © 2026 {portfolioData.personal.name}
           </p>
         </div>
       </footer>

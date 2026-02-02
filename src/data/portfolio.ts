@@ -48,7 +48,7 @@ export interface PortfolioData {
     featured?: boolean;
   }[];
   links: {
-    type: 'github' | 'linkedin' | 'blog' | 'resume' | 'email' | 'twitter';
+    type: 'github' | 'linkedin' | 'blog' | 'resume' | 'email' | 'twitter' | 'leetcode';
     url: string;
     label: string;
   }[];
@@ -59,32 +59,38 @@ export const portfolioData: PortfolioData = {
     name: "Adithya Monish Kumar K",
     title: "Full-Stack & AI Enthusiast",
     photoUrl: myselfImg,
-    bio: "A full-stack developer and AI enthusiast skilled in JavaScript (React, Node.js), TypeScript, and modern CSS. I build scalable web and mobile applications and integrate machine learning models—using TensorFlow, PyTorch, and Hugging Face—for features like semantic search and real-time analytics.",
+    bio: "Full-stack and AI enthusiast with experience in building scalable web and mobile applications and integrating AI models to them.",
     location: "Coimbatore, Tamil Nadu, India",
     email: "ooaadithya@gmail.com",
-    interests: ["Full Stack Development", "Mobile Application Development", "Machine Learning", "Deep Learning", "Artificial Intelligence"],
+    interests: ["Full Stack Development", "Mobile Application Development", "Artificial Intelligence"],
     stats: [
       { label: "Course", value: "Bachelor of Technology" },
       { label: "Specialization", value: "Computer Science and Engineering" },
       { label: "Year", value: "3rd Year" },
-      { label: "CGPA", value: "7.65" },
+      { label: "CGPA", value: "7.59" },
       { label: "Year of Graduation", value: "2027" },
       { label: "Status", value: "Available for Internships" }
     ]
   },
   skills: {
     technical: [
-      "React", "TypeScript", "Node.js", "MySQL", "Docker", 
+      "React", "TypeScript", "Node.js", "MySQL", "Docker",
       "PostgreSQL", "MongoDB", "Flutter", "Dart", "Git", "UI/UX Design",
       "Machine Learning (ML)", "HTML", "CSS", "JavaScript", "Python", "Java", "C/C++", "Dart", "Tailwind CSS",
       "Design and Analysis of Algorithms (DAA)", "Data Structures and Algorithms (DSA)", "Database Management System (DBMS)", "Object-Oriented Programming (OOP)", "Computer Organization and Architecture (COA)"
     ],
     general: [
-        "Critical Thinking", "Problem Solving", "Project Management", "Team Leadership", "Effective Communication", "Time Management", "Adaptability",
-        "Collaboration", "Decision Making", "Attention to Detail", "Creative Thinking", "Analytical Reasoning", "Interpersonal Skills"
+      "Critical Thinking", "Problem Solving", "Project Management", "Team Leadership", "Effective Communication", "Time Management", "Adaptability",
+      "Collaboration", "Decision Making", "Attention to Detail", "Creative Thinking", "Analytical Reasoning", "Interpersonal Skills"
     ]
   },
   certifications: [
+    {
+      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      issuer: "Amazon Web Services",
+      date: "2024",
+      link: "https://www.credly.com/badges/f036d950-0f39-4c46-bb2e-3c88e5e182f6/linked_in_profile"
+    },
     {
       title: "Google Cybersecurity Professional Certificate",
       issuer: "Google",
@@ -108,10 +114,21 @@ export const portfolioData: PortfolioData = {
   ],
   experience: [
     {
+      company: "Amrita Automotive Research and Technology Centre (AARTC)",
+      role: "Perception Team Researcher",
+      from: "Oct 2025",
+      to: "Present",
+      location: "Coimbatore, Tamil Nadu, India",
+      bullets: [
+        "Conducted research as part of the perception team on a BEV-based autonomous driving system",
+        "Worked on BEV and model training, including dataset preparation and training pipeline refinement"
+      ]
+    },
+    {
       company: "Sony SSUP AgroESP",
       role: "Mobile Application Team Lead",
-      from: "2025",
-      to: "Present",
+      from: "Jan 2025",
+      to: "Sep 2025",
       location: "Coimbatore, Tamil Nadu, India",
       bullets: [
         "Led the Creation and Development of the Sony SSUP AgroESP mobile application using Flutter and Dart, enabling farmers to access real-time weather data, market prices, and agricultural tips.",
@@ -132,16 +149,15 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
-      name: "LifeLeveler",
-      description: "A gamified life management app that transforms your daily tasks into an RPG adventure.",
-      tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "React Router", "Zustand", "Framer Motion", "Lucide React", "React Toastify", "PostCSS", "Autoprefixer", "ESLint", "Node.js", "PostgreSQL", "Netlify"],
-      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/LifeLeveler",
-      liveUrl: "https://lifeleveler.netlify.app",
+      name: "AgroESP Mobile App",
+      description: "Developed an app offering real-time and historical data monitoring of the Polyhouse. Integrated SSE for real-time sensor data, image updates, and chart rendering. Built query and graph pages; implemented responsive UI and live updates for data/image feeds. Currently in Testing phase on Play Store.",
+      tech: ["Flutter", "Dart", "SSE", "REST API", "Charts"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K",
       featured: true
     },
     {
       name: "PDF Document Structure Extraction Engine",
-      description: "Developed a hybrid pipeline to extract and classify structural elements (Title, H1-H4) from PDFs using LightGBM and Transformer-based models.  Engineered typographic and positional features, and implemented block-merging heuristics for robust outline generation.",
+      description: "Developed a hybrid pipeline to extract and classify structural elements (Title, H1-H4) from PDFs using LightGBM and Transformer-based models. Engineered typographic and positional features, and implemented block-merging heuristics for robust outline generation.",
       tech: ["Python", "LightGBM", "Transformers", "PyMuPDF"],
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/PDF-Document-Structure-Extraction-Engine",
       featured: true
@@ -149,9 +165,44 @@ export const portfolioData: PortfolioData = {
     {
       name: "Persona Driven Document Intelligence Engine",
       description: "Built a semantic matching engine that ranks PDF sections for specific user personas using fine-tuned SentenceTransformer and cosine similarity scoring. Designed a multi-stage relevance scoring framework combining title similarity, content embeddings, and subsection summarization.",
-      tech: ["Python", "SentenceTransformers","LightGBM"],
+      tech: ["Python", "SentenceTransformers", "LightGBM"],
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Persona-Driven-Document-Intelligence-Engine",
       featured: true
+    },
+    {
+      name: "Secure-Digital-Key-Asset-Checkout-System",
+      description: "A full-stack TypeScript web application for securely managing physical and digital asset checkout with enterprise-grade security features.",
+      tech: ["TypeScript", "React", "Node.js", "Express", "MongoDB"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Secure-Digital-Key-Asset-Checkout-System",
+      featured: true
+    },
+    {
+      name: "Learn-and-Exchange-Platform",
+      description: "An end-to-end web application for learning, bartering skills, and collaborating through tasks, offers, chat, reviews, and support tickets. Built with a modern TypeScript stack and real-time updates.",
+      tech: ["TypeScript", "React", "Node.js", "WebSocket", "PostgreSQL"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Learn-and-Exchange-Platform",
+      liveUrl: "https://skill-exchange-platform-nu.vercel.app/",
+      featured: true
+    },
+    {
+      name: "Traffic-Risk-Score-Calculator",
+      description: "A lightweight, edge-friendly PyTorch ANN for analyzing traffic camera images to detect risky behaviors and estimate a scalar risk signal.",
+      tech: ["Python", "PyTorch", "Computer Vision", "Deep Learning"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Traffic-Risk-Score-Calculator",
+      featured: true
+    },
+    {
+      name: "English-Tutor",
+      description: "A personal AI-powered English learning assistant designed specifically for Tamil speakers. Helps users learn English through natural conversation, translation, and interactive practice.",
+      tech: ["Flutter", "Dart", "Gemini AI", "Firebase"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/English-Tutor"
+    },
+    {
+      name: "LifeLeveler",
+      description: "A gamified life management app that transforms your daily tasks into an RPG adventure.",
+      tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Zustand", "Framer Motion"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/LifeLeveler",
+      liveUrl: "https://lifeleveler.netlify.app"
     }
   ],
   links: [
@@ -166,6 +217,11 @@ export const portfolioData: PortfolioData = {
       label: "LinkedIn"
     },
     {
+      type: "leetcode",
+      url: "https://leetcode.com/Adithya_Monish_Kumar_K",
+      label: "LeetCode"
+    },
+    {
       type: "resume",
       url: resumepdf,
       label: "Download Resume"
@@ -174,6 +230,6 @@ export const portfolioData: PortfolioData = {
       type: "email",
       url: "mailto:ooaadithya@gmail.com",
       label: "Email"
-    },
+    }
   ]
 };
