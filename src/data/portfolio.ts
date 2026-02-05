@@ -179,7 +179,7 @@ export const portfolioData: PortfolioData = {
     {
       name: "Learn-and-Exchange-Platform",
       description: "An end-to-end web application for learning, bartering skills, and collaborating through tasks, offers, chat, reviews, and support tickets. Built with a modern TypeScript stack and real-time updates.",
-      tech: ["TypeScript", "React", "Node.js", "WebSocket", "PostgreSQL"],
+      tech: ["TypeScript", "React", "Node.js","MongoDB"],
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Learn-and-Exchange-Platform",
       liveUrl: "https://skill-exchange-platform-nu.vercel.app/",
       featured: true
@@ -194,7 +194,7 @@ export const portfolioData: PortfolioData = {
     {
       name: "English-Tutor",
       description: "A personal AI-powered English learning assistant designed specifically for Tamil speakers. Helps users learn English through natural conversation, translation, and interactive practice.",
-      tech: ["Flutter", "Dart", "Gemini AI", "Firebase"],
+      tech: ["Flutter", "Dart", "Gemini API"],
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/English-Tutor"
     },
     {
