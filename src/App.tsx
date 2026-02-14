@@ -4,7 +4,6 @@ import HeroHUD from './components/HeroHUD';
 import SkillsGrid from './components/SkillsGrid';
 import Certifications from './components/Certifications';
 import Interests from './components/Interests';
-import Awards from './components/Awards';
 import Timeline from './components/Timeline';
 import ProjectCard from './components/ProjectCard';
 import ResumeDownload from './components/ResumeDownload';
@@ -35,8 +34,6 @@ function App() {
         <Certifications />
 
         <Interests />
-
-        <Awards />
 
         <Timeline />
 

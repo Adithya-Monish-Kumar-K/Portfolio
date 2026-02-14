@@ -11,7 +11,6 @@ const Navigation = () => {
     { id: 'general-skills', label: 'General Skills' },
     { id: 'certifications', label: 'Certifications' },
     { id: 'interests', label: 'Interests' },
-    { id: 'awards', label: 'Awards' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'resume', label: 'Resume' },
