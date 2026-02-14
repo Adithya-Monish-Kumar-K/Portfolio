@@ -82,7 +82,7 @@ export const portfolioData: PortfolioData = {
       "Docker", "AWS Cloud", "Cloud Architecture", "IAM", "Network Security", "Cybersecurity", "Security Best Practices",
       "Machine Learning (ML)", "Computer Vision", "Deep Learning", "PyTorch", "LightGBM",
       "Design and Analysis of Algorithms (DAA)", "Data Structures and Algorithms (DSA)", "Database Management System (DBMS)", "Object-Oriented Programming (OOP)", "Computer Organization and Architecture (COA)",
-      "Git", "Transformers", "SentenceTransformers"
+      "Git", "Transformers", "SentenceTransformers", 
     ],
     general: [
       "Critical Thinking", "Problem Solving", "Project Management", "Team Leadership", "Effective Communication", "Time Management", "Adaptability",
