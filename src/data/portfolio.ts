@@ -74,10 +74,15 @@ export const portfolioData: PortfolioData = {
   },
   skills: {
     technical: [
-      "React", "TypeScript", "Node.js", "MySQL", "Docker",
-      "PostgreSQL", "MongoDB", "Flutter", "Dart", "Git", "UI/UX Design",
-      "Machine Learning (ML)", "HTML", "CSS", "JavaScript", "Python", "Java", "C/C++", "Dart", "Tailwind CSS",
-      "Design and Analysis of Algorithms (DAA)", "Data Structures and Algorithms (DSA)", "Database Management System (DBMS)", "Object-Oriented Programming (OOP)", "Computer Organization and Architecture (COA)"
+      "React", "Next.js", "TypeScript", "Node.js", "Express", "REST API", "SSE",
+      "Go", "Python", "Java", "C/C++",
+      "Flutter", "Dart",
+      "Tailwind CSS", "UI/UX Design", "Framer Motion", "Zustand", "Supabase",
+      "MySQL", "PostgreSQL", "MongoDB", "Redis", "Kafka",
+      "Docker", "AWS Cloud", "Cloud Architecture", "IAM", "Network Security", "Cybersecurity", "Security Best Practices",
+      "Machine Learning (ML)", "Computer Vision", "Deep Learning", "PyTorch", "LightGBM", "Transformers", "SentenceTransformers",
+      "Design and Analysis of Algorithms (DAA)", "Data Structures and Algorithms (DSA)", "Database Management System (DBMS)", "Object-Oriented Programming (OOP)", "Computer Organization and Architecture (COA)",
+      "Git"
     ],
     general: [
       "Critical Thinking", "Problem Solving", "Project Management", "Team Leadership", "Effective Communication", "Time Management", "Adaptability",
