@@ -88,7 +88,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
       issuer: "Amazon Web Services",
-      date: "2024",
+      date: "2025",
       link: "https://www.credly.com/badges/f036d950-0f39-4c46-bb2e-3c88e5e182f6/linked_in_profile"
     },
     {
@@ -105,12 +105,6 @@ export const portfolioData: PortfolioData = {
     }
   ],
   awards: [
-    {
-      title: "Adobe India Hackathon Shortlisted Candidate",
-      date: "2025",
-      description: "Passed the Round 1 of the Adobe India Hackathon 2025. Being shortlisted as one of the top 10000 from 2,62,000+ participants.",
-      organization: "Adobe"
-    }
   ],
   experience: [
     {
@@ -203,6 +197,12 @@ export const portfolioData: PortfolioData = {
       tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Zustand", "Framer Motion"],
       repoUrl: "https://github.com/Adithya-Monish-Kumar-K/LifeLeveler",
       liveUrl: "https://lifeleveler.netlify.app"
+    },
+    {
+      name: "Distributed Search & Analytics Platform",
+      description: "Production-grade distributed full-text search engine built from scratch in Go with custom inverted indexing, BM25 ranking, sharding, API gateway with auth/rate limiting, analytics pipeline, Redis caching, and full observability.",
+      tech: ["Go", "PostgreSQL", "Kafka", "Redis", "Docker", "Next.js 14 (web dashboard)"],
+      repoUrl: "https://github.com/Adithya-Monish-Kumar-K/Distributed-Search-Analytics-Platform"
     }
   ],
   links: [
